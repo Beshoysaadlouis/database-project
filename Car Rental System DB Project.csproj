@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D68C771B-ABF7-4A9E-A9FC-6142AF3FCF5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Car_Rental_System_DB_Project</RootNamespace>
+    <AssemblyName>z</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add car.Designer.cs">
+      <DependentUpon>Add car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Emp.Designer.cs">
+      <DependentUpon>Add_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car Operations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car Operations.Designer.cs">
+      <DependentUpon>Car Operations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Car.Designer.cs">
+      <DependentUpon>Delete Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Car id.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Car id.Designer.cs">
+      <DependentUpon>Edit Car id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Car.Designer.cs">
+      <DependentUpon>Edit Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit emp id.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit emp id.Designer.cs">
+      <DependentUpon>Edit emp id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Employee.Designer.cs">
+      <DependentUpon>Edit Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Operations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Operations.Designer.cs">
+      <DependentUpon>Employee Operations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Car.Designer.cs">
+      <DependentUpon>View Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Employee.Designer.cs">
+      <DependentUpon>View Employee.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add car.resx">
+      <DependentUpon>Add car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Emp.resx">
+      <DependentUpon>Add_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car Operations.resx">
+      <DependentUpon>Car Operations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Car.resx">
+      <DependentUpon>Delete Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Car id.resx">
+      <DependentUpon>Edit Car id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Car.resx">
+      <DependentUpon>Edit Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit emp id.resx">
+      <DependentUpon>Edit emp id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Employee.resx">
+      <DependentUpon>Edit Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Operations.resx">
+      <DependentUpon>Employee Operations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View Car.resx">
+      <DependentUpon>View Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Employee.resx">
+      <DependentUpon>View Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
